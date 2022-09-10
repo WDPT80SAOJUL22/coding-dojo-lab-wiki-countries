@@ -15,14 +15,13 @@ function App() {
   const getCountries = async () => {
     try {
       const { data } = await axios.get('https://ih-countries-api.herokuapp.com/countries')
-      console.log(data)
       setCountries(data)
       setLoading(false)
     } catch (error) {
       
     }
   }
-  
+
   // const getCountries2 =  () => {
   //     axios.get('https://ih-countries-api.herokuapp.com/countries')
   //       .then(({ data }) => {
